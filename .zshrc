@@ -4,6 +4,13 @@ source ~/.zgen/zgen.zsh
 . "$HOME/.asdf/asdf.sh"
 . ~/.asdf/plugins/java/set-java-home.zsh # JAVA_HOME with asdf
 
+# zgen -> git clone https://github.com/tarjoilija/zgen.git "${HOME}/.zgen"
+# .asdf -> git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.13.1
+# asdf plugin add (nodejs, python, java)
+# asdf list all (nodejs, python, java)
+# asdf install (nodejs, python, java) (version)
+# asdf global (nodejs, python, java) (version)
+
 zgen load denysdovhan/spaceship-zsh-theme spaceship
 zgen load zdharma-continuum/fast-syntax-highlighting
 zgen load zsh-users/zsh-autosuggestions
