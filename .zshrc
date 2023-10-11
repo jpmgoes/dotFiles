@@ -1,3 +1,4 @@
+export ZSH="$HOME/.oh-my-zsh"
 source $ZSH/oh-my-zsh.sh
 source ~/.zgen/zgen.zsh
 . "$HOME/.asdf/asdf.sh"
