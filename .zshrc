@@ -1,4 +1,6 @@
 export ZSH="$HOME/.oh-my-zsh"
+export GTK_IM_MODULE=cedilla # Colocando cedilha no ubuntu
+
 source $ZSH/oh-my-zsh.sh
 source ~/.zgen/zgen.zsh
 . "$HOME/.asdf/asdf.sh"
@@ -21,7 +23,6 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(
   git zsh-autosuggestions zsh-completions asdf
 )
-autoload -U compinit && compinit
 
 SPACESHIP_PROMPT_ORDER=(
   user dir host git node hg exec_time line_sep jobs exit_code char
@@ -32,6 +33,6 @@ SPACESHIP_CHAR_SYMBOL="❯"
 SPACESHIP_CHAR_SUFFIX=" "
 
 autoload -U promptinit; promptinit
+autoload -Uz compinit && compinit
 
 fpath=(${ASDF_DIR}/completions $fpath)
-autoload -Uz compinit && compinit
