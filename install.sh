@@ -17,9 +17,9 @@ echo "[03] - Ativando login com root pelo ssh"
 passwd root
 passwd -u root
 
-SSH_CONF=$"$(cat /etc/ssh/sshd_config)
-PermitRootLogin yes"
-echo "[04] - $SSH_CONF" >/etc/ssh/sshd_config
+SSH_CONF="PermitRootLogin yes
+$(cat /etc/ssh/sshd_config)"
+echo "$SSH_CONF" >/etc/ssh/sshd_config
 
 service ssh restart
 
@@ -70,3 +70,5 @@ cp -r ~/dotFiles/nvim/lazyvim_config/nvim ~/.config/
 echo "[14] - Script finalizado"
 
 zsh
+
+# INSTALL_NODE_VERSION=20.11.1 && curl https://raw.githubusercontent.com/jpmourag/dotFiles/master/install.sh > install.sh && sh install.sh
