@@ -17,6 +17,7 @@ echo "[03] - Ativando login com root pelo ssh"
 passwd root
 passwd -u root
 
+echo "[04] - Configurando root no ssh"
 SSH_CONF="PermitRootLogin yes
 $(cat /etc/ssh/sshd_config)"
 echo "$SSH_CONF" >/etc/ssh/sshd_config
@@ -67,7 +68,14 @@ echo "[13] - Movendo nvim config"
 mkdir -p ~/.config/nvim
 cp -r ~/dotFiles/nvim/lazyvim_config/nvim ~/.config/
 
-echo "[14] - Script finalizado"
+systemctl disable network-manager.service
+systemctl stop network-manager.service
+
+echo "[14] Instalando Cockpit"
+. /etc/os-release
+sudo apt install -t ${VERSION_CODENAME}-backports cockpit
+
+echo "[15] - Script finalizado"
 
 zsh
 
