@@ -29,6 +29,7 @@ apt install zsh -y
 
 echo "[06] - Preparando zsh"
 chsh -s $(which zsh)
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 echo "[07] - Recuperando dotFiles"
 cd ~/
