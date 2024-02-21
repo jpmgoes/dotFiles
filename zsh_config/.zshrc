@@ -37,3 +37,4 @@ autoload -U promptinit; promptinit
 autoload -Uz compinit && compinit
 
 fpath=(${ASDF_DIR}/completions $fpath)
+export PATH="$PATH:/opt/nvim-linux64/bin"
