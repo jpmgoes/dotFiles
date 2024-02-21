@@ -4,7 +4,7 @@ export GTK_IM_MODULE=cedilla # Colocando cedilha no ubuntu
 source $ZSH/oh-my-zsh.sh
 source ~/.zgen/zgen.zsh
 . "$HOME/.asdf/asdf.sh"
-. ~/.asdf/plugins/java/set-java-home.zsh # JAVA_HOME with asdf
+# . ~/.asdf/plugins/java/set-java-home.zsh # JAVA_HOME with asdf
 
 # zgen -> git clone https://github.com/tarjoilija/zgen.git "${HOME}/.zgen"
 # .asdf -> git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.13.1
