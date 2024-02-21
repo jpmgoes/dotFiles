@@ -40,7 +40,6 @@ git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.14.0
 
 echo "[09] - Configurando zsh"
 git clone https://github.com/tarjoilija/zgen.git "${HOME}/.zgen"
-git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.13.1
 cp ~/dotFiles/zsh_config/.zshrc ~/
 
 echo "[10] - Adicionando NodeJS"
