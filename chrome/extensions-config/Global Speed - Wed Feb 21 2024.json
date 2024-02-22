@@ -1,0 +1,113 @@
+{
+  "version": 10,
+  "firstUse": 1708561012491,
+  "keybinds": [
+    {
+      "id": "9742671726",
+      "command": "adjustSpeed",
+      "enabled": true,
+      "greedy": true,
+      "adjustMode": 2,
+      "key": {
+        "ctrlKey": false,
+        "altKey": true,
+        "shiftKey": false,
+        "metaKey": false,
+        "code": "ArrowLeft"
+      },
+      "valueNumberAlt": -0.1
+    },
+    {
+      "id": "1540412920",
+      "command": "adjustSpeed",
+      "enabled": true,
+      "greedy": true,
+      "adjustMode": 1,
+      "key": {
+        "ctrlKey": false,
+        "altKey": true,
+        "shiftKey": false,
+        "metaKey": false,
+        "code": "Equal"
+      },
+      "valueNumber": 1
+    },
+    {
+      "id": "1825736690",
+      "command": "adjustSpeed",
+      "enabled": true,
+      "greedy": true,
+      "adjustMode": 2,
+      "key": {
+        "ctrlKey": false,
+        "altKey": true,
+        "shiftKey": false,
+        "metaKey": false,
+        "code": "ArrowRight"
+      },
+      "valueNumberAlt": 0.1,
+      "spacing": 1
+    }
+  ],
+  "common": {
+    "speed": 1,
+    "enabled": true,
+    "backdropFx": {
+      "filters": [
+        { "name": "sepia", "value": 0 },
+        { "name": "hueRotate", "value": 0 },
+        { "name": "grayscale", "value": 0 },
+        { "name": "contrast", "value": 1 },
+        { "name": "brightness", "value": 1 },
+        { "name": "saturate", "value": 1 },
+        { "name": "invert", "value": 0 },
+        { "name": "blur", "value": 0 },
+        { "name": "opacity", "value": 1 }
+      ],
+      "transforms": [
+        { "name": "scaleX", "value": 1 },
+        { "name": "scaleY", "value": 1 },
+        { "name": "translateX", "value": 0 },
+        { "name": "translateY", "value": 0 },
+        { "name": "rotateX", "value": 0 },
+        { "name": "rotateY", "value": 0 },
+        { "name": "rotateZ", "value": 0 }
+      ]
+    },
+    "elementFx": {
+      "filters": [
+        { "name": "sepia", "value": 0 },
+        { "name": "hueRotate", "value": 0 },
+        { "name": "grayscale", "value": 0 },
+        { "name": "contrast", "value": 1 },
+        { "name": "brightness", "value": 1 },
+        { "name": "saturate", "value": 1 },
+        { "name": "invert", "value": 0 },
+        { "name": "blur", "value": 0 },
+        { "name": "opacity", "value": 1 }
+      ],
+      "transforms": [
+        { "name": "scaleX", "value": 1 },
+        { "name": "scaleY", "value": 1 },
+        { "name": "translateX", "value": 0 },
+        { "name": "translateY", "value": 0 },
+        { "name": "rotateX", "value": 0 },
+        { "name": "rotateY", "value": 0 },
+        { "name": "rotateZ", "value": 0 }
+      ]
+    },
+    "audioFx": {
+      "pitch": 0,
+      "volume": 1,
+      "delay": 0,
+      "eq": {
+        "enabled": false,
+        "factor": 1,
+        "values": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      }
+    },
+    "lastSpeed": 0.9
+  },
+  "keybindsUrlCondition": null
+}
+
