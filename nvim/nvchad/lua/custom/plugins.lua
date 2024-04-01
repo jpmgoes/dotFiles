@@ -141,7 +141,9 @@ local plugins = {
       ensure_installed = {
         "lua-language-server",
         "clangd",
+        "autopep8",
         "clang-format",
+        "pyright",
         "marksman",
         "codelldb", -- cpp debugger
         "eslint-lsp",

@@ -28,3 +28,8 @@ lspconfig.eslint.setup({
     ".eslintrc"
   ),
 })
+
+lspconfig.pyright.setup({
+  on_attach = on_attach,
+  capabilities = capabilities,
+})
