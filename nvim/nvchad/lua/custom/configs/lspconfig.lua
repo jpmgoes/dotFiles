@@ -19,3 +19,12 @@ lspconfig.tsserver.setup({
   on_attach = on_attach,
   capabilities = capabilities,
 })
+
+lspconfig.eslint.setup({
+  root_dir = lspconfig.util.root_pattern(
+    "eslint.config.js",
+    ".eslintrc.js",
+    ".eslintrc.json",
+    ".eslintrc"
+  ),
+})
