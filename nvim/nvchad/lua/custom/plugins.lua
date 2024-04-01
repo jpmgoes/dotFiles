@@ -7,6 +7,14 @@ local plugins = {
   },
 
   {
+    "jose-elias-alvarez/null-ls.nvim", -- format file
+    event = "VeryLazy",
+    opts = function ()
+      return require "custom.configs.null-ls"
+    end,
+  },
+
+  {
     "nvim-treesitter/nvim-treesitter",
     opts = {
       ensure_installed = {
@@ -133,6 +141,7 @@ local plugins = {
       ensure_installed = {
         "lua-language-server",
         "clangd",
+        "clang-format",
         "marksman",
         "codelldb", -- cpp debugger
         "eslint-lsp",
