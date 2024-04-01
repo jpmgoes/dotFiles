@@ -3,6 +3,16 @@ local options = {
     dotfiles = false,
     exclude = { vim.fn.stdpath "config" .. "/lua/custom" },
   },
+  diagnostics = {
+    enable = true,
+    show_on_dirs = true,
+    icons = {
+      hint = "󰌵",
+      info = "",
+      warning = "",
+      error = "",
+    },
+  },
   disable_netrw = true,
   hijack_netrw = true,
   hijack_cursor = true,
@@ -31,8 +41,8 @@ local options = {
     },
   },
   renderer = {
-    root_folder_label = false,
-    highlight_git = false,
+    root_folder_label = true,
+    highlight_git = true,
     highlight_opened_files = "none",
 
     indent_markers = {
@@ -61,11 +71,13 @@ local options = {
           arrow_closed = "",
         },
         git = {
-          unstaged = "✗",
+          -- unstaged = "✗",
+          unstaged = "U",
           staged = "✓",
           unmerged = "",
           renamed = "➜",
-          untracked = "★",
+          -- untracked = "★",
+          untracked = "?",
           deleted = "",
           ignored = "◌",
         },

@@ -92,7 +92,7 @@ local plugins = {
     opts = {
       handlers = {},
       ensure_installed = {
-        "codelldb"
+        "codelldb",
       },
     }
   },
@@ -133,6 +133,7 @@ local plugins = {
       ensure_installed = {
         "lua-language-server",
         "clangd",
+        "marksman",
         "codelldb", -- cpp debugger
         "eslint-lsp",
         "json-lsp",
